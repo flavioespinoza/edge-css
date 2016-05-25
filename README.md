@@ -22,7 +22,7 @@ Include the edge.css in the head of your index.html
 </head>
 ```
 
-Add classes to create padding and margins with the following (px) values: 2, 3, 4, 6, 12, 16, 18, 24, 36, 48
+Add classes to create padding and margins with the following `(px) values`: 2, 3, 4, 6, 12, 16, 18, 24, 36, 48
 
 ```html
 <body>
@@ -41,14 +41,26 @@ These elements have no padding
 This navigation is centered
 ```html
 <body>
-<!-- Read "margin-vertical-null margin-horizontal-auto" -->
-<nav class="mv0 mha">
+<!-- Read "{ margin: auto 0 }" -->
+<nav class="ma0">
   <a href="/">Home</a>
 </nav>
 </body>
 ```
 
 All CSS properties have `!important` so they will override any class that is specified before them.
+
+
+```html
+<style>
+    .btn-default {
+        margin: 12px;
+    }
+</style>
+
+<!-- This button will have margin-top, margin-left and margin-bottom of 12px and a margin-right of 0px; -->
+<button class="btn-defulat mr0">Submit</button>
+```
 
 ### How it works
 All classes are composed of some simple parts.
@@ -76,7 +88,7 @@ h         horizontal
 ```
 
 ### 3. Positive or negative values (margins only)
-```
+```html
 <div class="mr16"></div>      positive value { margin-right: 16px }
 <div class="mr-16"></div>     negative value { margin-right: -16px }
 ```
