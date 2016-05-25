@@ -76,7 +76,7 @@ h         horizontal
 
 ```
 
-### 3. Delimiter
+### 3. Positive or negative values (margins only)
 ```
 <div class="mr16"></div>      positive value { margin-right: 16px }
 <div class="mr-16"></div>     negative value { margin-right: -16px }
@@ -97,13 +97,11 @@ a  auto
 48  48px
 ```
 
-### Possible classes (normal syntax)
-
-The following example just uses one size: s (24px). There is also `xxxs - xxxl` and `0` and `a` (which is auto).
-
-Margin classes (they start with **m**) can have positive and negative values, padding classes (replace the leading **m** with a **p**) just have positive values.
+### Example of classes with 24px margins
 
 ```
+// Margins
+
 mt24      margin-top: 24px
 mr24      margin-right: 24px
 mb24      margin-bottom: 24px
@@ -114,6 +112,7 @@ mv24      margin-top: 24px; margin-bottom: 24px
 
 m24       margin: 24px
 
+// Negative margins
 mt-24      margin-top: -24px
 mr-24      margin-right: -24px
 mb-24      margin-bottom: -24px
@@ -124,7 +123,7 @@ mv-24      margin-top: -24px; margin-bottom: -24px
 
 m-24       margin: -24px
 
-// there is also 'auto'
+// Auto margins
 mta       margin-top: auto
 mra       margin-right: auto
 mba       margin-bottom: auto
@@ -135,10 +134,8 @@ mva       margin-top: auto; margin-bottom: auto
 
 ma        margin: auto
 
-// padding classes would be like this:
-pt24      padding-top: 24px;
-pr24       padding-right: 24px;
-// etc.
+ma0       margin: auto 0 //for centering any element within it's parent
+
 ```
 
 ## Individualize
