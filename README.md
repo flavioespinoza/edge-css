@@ -1,43 +1,39 @@
 # CSS Edge
 Intuitive margin and padding classes for quick markup styling
 
-## Why another css library?
-Many libraries try to do everything: sizes, typography, buttons, grid, helpers. CSS Spaces concentrates on one thing only: **some classes to add spaces between elements**. Use it with whatever framework or library you like.
+## SMART
+Based on the Duodecimal System (aka Base 12) which is a positional system using twelve as its base.
 
-## Install with bower
+## INSTALL
+bower
 ```shell
-$ bower install css-spaces
-```
-
-## Install with npm
-```shell
-$ npm install css-spaces
+$ bower install edge-css
 ```
 
 ## Usage
-Include the spaces.css to your website:
+Include the edge.css in the head of your index.html:
 
 ```html
 <head>
-<!-- other stuff -->
-<link rel="stylesheet" href="path/to/spaces.css">
+<link rel="stylesheet" href="bower_components/dist/edge.css">
 </head>
 ```
 
-Add classes to create paddings and margins.
+Add classes to create padding and margins with the following values: 4, 6, 12, 16, 18, 24, 36, 48
 
-The following header has a <b>m</b>argin-<b>t</b>op with the size of **xl**:
+
+
 ```html
 <body>
-<header class="mt-xl">This is the header.</header>
+<header class="mt12">This will give this header a margin-top of 12px</header>
 </body>
 ```
 
 These elements have no padding:
 ```html
 <body>
-<h1 class="p-0">Lorem ipsum</h1>
-<h2 class="p-0">Dolor sit</h2>
+<h1 class="p0">Lorem ipsum</h1>
+<h2 class="p0">Dolor sit</h2>
 </body>
 ```
 
@@ -45,7 +41,7 @@ This navigation is centered:
 ```html
 <body>
 <!-- Read "margin-vertical-null margin-horizontal-auto" -->
-<nav class="mv-0 mh-a">
+<nav class="mv0 mha">
   <a href="/">Home</a>
 </nav>
 </body>
@@ -76,7 +72,7 @@ l         left
 v         vertical
 h         horizontal
 
-(none)    No direction specified means *all* directions (like in `margin: 8px;`)
+(none)    No direction specified means *all* directions (m8 = `margin: 8px;`)
 
 ```
 
@@ -87,23 +83,23 @@ h         horizontal
 ```
 Example:
 ```css
-.mt-xs  { margin-top: 16px }
-.mt--xs { margin-top: 16px }
+.mt16  { margin-top: 16px }
+.mt-16 { margin-top: 16px }
 ```
 
 ### 4. Size
 ```
-a          auto
-0          0
-xxxs       4px
-xxs        8px
-xs         16px
-s          24px
-m          36px
-l          48px
-xl         72px
-xxl        96px
-xxxl       144px
+a  auto
+0  0px             
+4  4px 
+6  6px 
+8  8px 
+12  12px
+16  16px
+18  18px
+24  24px
+32  32px
+48  48px
 ```
 
 ### Possible classes (normal syntax)
@@ -113,65 +109,45 @@ The following example just uses one size: s (24px). There is also `xxxs - xxxl` 
 Margin classes (they start with **m**) can have positive and negative values, padding classes (replace the leading **m** with a **p**) just have positive values.
 
 ```
-mt-s      margin-top: 24px
-mr-s      margin-right: 24px
-mb-s      margin-bottom: 24px
-ml-s      margin-left: 24px
+mt24      margin-top: 24px
+mr24      margin-right: 24px
+mb24      margin-bottom: 24px
+ml24      margin-left: 24px
 
-mh-s      margin-left: 24px; margin-right: 24px
-mv-s      margin-top: 24px; margin-bottom: 24px
+mh24      margin-left: 24px; margin-right: 24px
+mv24      margin-top: 24px; margin-bottom: 24px
 
-m-s       margin: 24px
+m24       margin: 24px
 
-mt--s      margin-top: -24px
-mr--s      margin-right: -24px
-mb--s      margin-bottom: -24px
-ml--s      margin-left: -24px
+mt-24      margin-top: -24px
+mr-24      margin-right: -24px
+mb-24      margin-bottom: -24px
+ml-24      margin-left: -24px
 
-mh--s      margin-left: -24px; margin-right: -24px
-mv--s      margin-top: -24px; margin-bottom: -24px
+mh-24      margin-left: -24px; margin-right: -24px
+mv-24      margin-top: -24px; margin-bottom: -24px
 
-m--s       margin: -24px
+m-24       margin: -24px
 
 // there is also 'auto'
-mt-a       margin-top: auto
-mr-a       margin-right: auto
-mb-a       margin-bottom: auto
-ml-a       margin-left: auto
+mta       margin-top: auto
+mra       margin-right: auto
+mba       margin-bottom: auto
+mla       margin-left: auto
 
-mh-a       margin-left: auto; margin-right: auto
-mv-a       margin-top: auto; margin-bottom: auto
+mha       margin-left: auto; margin-right: auto
+mva       margin-top: auto; margin-bottom: auto
 
-m-a        margin: auto
+ma        margin: auto
 
 // padding classes would be like this:
-pt-s       padding-top: 24px;
-pr-s       padding-right: 24px;
+pt24      padding-top: 24px;
+pr24       padding-right: 24px;
 // etc.
-```
-
-### We also support the (not so cool) Bootstrap 4 syntax
-```
-m-t-0       margin-top: 0
-m-t         margin-top: 1rem // no-name means "sm (small)"
-m-t-md      margin-top: 1.5rem
-m-t-lg      margin-top: 3rem
-
-m-a-lg      margin: 3rem // a means "all"
-```
-We added negative margins as well (they are missing in Bootstrap 4). Due to the weird syntax for small (no suffix instead of the logical `-sm`), the syntax for negative values is as follows.
-
-```
-m-neg        margin: -1rem
-m-t-xs-neg   margin-top: -0.5rem
-m-t-neg      margin-top: -1.0rem
-m-t-md-neg   margin-top: -1.5rem
-m-t-lg-neg   margin-top: -3rem
-
 ```
 
 ## Individualize
 1. Install Sass (google it).
-2. Run `npm install`
+2. Run `bower install`
 3. Change things in `source/` ()
 4. Run `gulp` or `gulp deploy`

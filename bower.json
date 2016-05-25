@@ -1,14 +1,15 @@
 {
   "name": "Edge css",
-  "description": "A simple CSS spacing library for margins, paddings and more",
-  "main": "dist/spaces.css",
+  "description": "Intuitive margin and padding CSS library for quick markup styling",
+  "main": "dist/edge.css",
   "authors": [
-    "Jeremias Erbs <j@badabam.de>"
+    "Flavio Espinoza <flavio.espinoza@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
     "css",
     "sass",
+    "scss",
     "margin",
     "padding",
     "width",
@@ -18,7 +19,7 @@
     "library",
     "lib"
   ],
-  "homepage": "http://badabam.github.io/css-spaces/",
+  "homepage": "https://github.com/flavioespinoza/edge-css",
   "moduleType": [],
   "ignore": [
     "**/.*",
