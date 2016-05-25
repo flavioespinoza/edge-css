@@ -7,11 +7,10 @@ Intuitive margin and padding classes for quick markup styling
 
 
 ## SMART
-Based on the Duodecimal System (aka Base 12) which is a positional system using twelve as its base.
+Based on the Duodecimal System (aka Base 12) which is a positional system using twelve as its base. Bootstrap, One%, Skeleton and 960 Grid System are all designed using Base 12 principles.
 
 
 ## INSTALL
-bower
 ```shell
 $ bower install edge-css
 ```
