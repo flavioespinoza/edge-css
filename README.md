@@ -1,8 +1,14 @@
 # CSS Edge
 Intuitive margin and padding classes for quick markup styling
+```html
+<div class="mt12">Header has a margin-top of 12px</div>
+<div class="mt12 mb6">Header has a margin-top of 12px and margin-bottom of 6px</div>
+```
+
 
 ## SMART
 Based on the Duodecimal System (aka Base 12) which is a positional system using twelve as its base.
+
 
 ## INSTALL
 bower
@@ -25,7 +31,7 @@ Add classes to create padding and margins with the following values: 4, 6, 12, 1
 
 ```html
 <body>
-<header class="mt12">This will give this header a margin-top of 12px</header>
+<header class="mt12">Header has a margin-top of 12px</header>
 </body>
 ```
 
