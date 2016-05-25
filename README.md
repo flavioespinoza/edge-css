@@ -1,4 +1,4 @@
-# CSS Edge
+# Edge CSS
 Intuitive margin and padding classes for quick markup styling
 ```html
 <div class="mt12">Header has a margin-top of 12px</div>
