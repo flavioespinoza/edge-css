@@ -78,13 +78,8 @@ h         horizontal
 
 ### 3. Delimiter
 ```
--         positive value
---        negative value
-```
-Example:
-```css
-.mt16  { margin-top: 16px }
-.mt-16 { margin-top: 16px }
+<div class="mr16"></div>      positive value { margin-right: 16px }
+<div class="mr-16"></div>     negative value { margin-right: -16px }
 ```
 
 ### 4. Size
