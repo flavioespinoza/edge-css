@@ -121,7 +121,9 @@ a  auto
 <div class="mh24">margin-left: 24px; margin-right: 24px</div>
 <div class="mv24">margin-top: 24px; margin-bottom: 24px</div>
 
+
 <!--Negative margins-->
+
 <div class="m-24">margin: -24px</div>
 <div class="mt-24">margin-top: -24px</div>
 <div class="mr-24">margin-right: -24px</div>
@@ -136,6 +138,7 @@ a  auto
 ```html
 
 <!--Auto margins-->
+
 <div class="ma">margin: auto</div>
 <div class="mta">margin-top: auto</div>
 <div class="mra">margin-right: auto</div>
@@ -144,7 +147,9 @@ a  auto
 <div class="mha">margin-left: auto; margin-right: auto</div>
 <div class="mva">margin-top: auto; margin-bottom: auto</div>
 
+
 <!--Margin auto 0 for centering any element within it's parent-->
+
 <div class="ma0">margin: auto 0</div>
 ```
 
