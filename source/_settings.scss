@@ -2,6 +2,8 @@
 $prefix: '';
 
 // sizes
+$xxxxxs: 2px;
+$xxxxs: 3px;
 $xxxs: 4px;
 $xxs: 6px;
 $xs: 8px;
@@ -30,6 +32,8 @@ $neg: '-';
 $sizes: (
     $auto: auto,
     $null: 0,
+    2 : $xxxxxs,
+    3 : $xxxxs,
     4 : $xxxs,
     6 : $xxs,
     8 : $xs,

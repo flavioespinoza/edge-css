@@ -5,18 +5,16 @@ Intuitive margin and padding classes for quick markup styling
 <div class="mt12 mb6">Header has a margin-top of 12px and margin-bottom of 6px</div>
 ```
 
+### SMART
+Based on the Duodecimal System (aka Base 12) which is a positional system using twelve as its base. Bootstrap, One%, Skeleton and 960 Grid System are all designed using Base 12 principles. All modern displays are also based on Base 12 and are divisible by 12 or it's four divisors: 2, 3, 4, 6. 
 
-## SMART
-Based on the Duodecimal System (aka Base 12) which is a positional system using twelve as its base. Bootstrap, One%, Skeleton and 960 Grid System are all designed using Base 12 principles.
-
-
-## INSTALL
+### INSTALL
 ```shell
-$ bower install edge-css
+$ bower install edge-css --save
 ```
 
-## Usage
-Include the edge.css in the head of your index.html:
+### Usage
+Include the edge.css in the head of your index.html
 
 ```html
 <head>
@@ -24,9 +22,7 @@ Include the edge.css in the head of your index.html:
 </head>
 ```
 
-Add classes to create padding and margins with the following values: 4, 6, 12, 16, 18, 24, 36, 48
-
-
+Add classes to create padding and margins with the following (px) values: 2, 3, 4, 6, 12, 16, 18, 24, 36, 48
 
 ```html
 <body>
@@ -34,7 +30,7 @@ Add classes to create padding and margins with the following values: 4, 6, 12, 1
 </body>
 ```
 
-These elements have no padding:
+These elements have no padding
 ```html
 <body>
 <h1 class="p0">Lorem ipsum</h1>
@@ -42,7 +38,7 @@ These elements have no padding:
 </body>
 ```
 
-This navigation is centered:
+This navigation is centered
 ```html
 <body>
 <!-- Read "margin-vertical-null margin-horizontal-auto" -->
@@ -52,11 +48,9 @@ This navigation is centered:
 </body>
 ```
 
-All properties have `!important` as you should only add those classes, if you definitely want a specific behavior.
+All CSS properties have `!important` so they will override any class that is specified before them.
 
-Sizes are defined in `px`.
-
-## How it works
+### How it works
 All classes are composed of some simple parts.
 
 ### 1. Property shortcut
@@ -143,8 +137,19 @@ ma0       margin: auto 0 //for centering any element within it's parent
 
 ```
 
-## Individualize
-1. Install Sass (google it).
-2. Run `bower install`
-3. Change things in `source/` ()
-4. Run `gulp` or `gulp deploy`
+### Customize
+Dev dependencies
+  * [SASS] - Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
+  * [Gulp] - The automated task/build runner for development.
+  
+  cd into your local directory and run the following commands
+```shell
+$ npm install
+```
+```shell
+$ gulp
+```
+Modify the .scss files in the source folder and gulp will automatically update your edge.css file in the dist folder
+
+   [SASS]: <http://sass-lang.com/install>
+   [Gulp]: <https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md>
