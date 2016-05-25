@@ -5,10 +5,10 @@ Intuitive margin and padding classes for quick markup styling
 <div class="mt12 mb6">Header has a margin-top of 12px and margin-bottom of 6px</div>
 ```
 
-### SMART
+### Smart
 Based on the Duodecimal System (aka Base 12) which is a positional system using twelve as its base. Bootstrap, One%, Skeleton and 960 Grid System are all designed using Base 12 principles. All modern displays are also based on Base 12 and are divisible by 12 or it's four divisors: 2, 3, 4, 6. 
 
-### INSTALL
+### Install
 ```shell
 $ bower install edge-css --save
 ```
