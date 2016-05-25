@@ -110,42 +110,37 @@ a  auto
 
 ### Example of classes with 24px margins
 
-```
-// Margins
+```html
+<!--Margins-->
 
-mt24      margin-top: 24px
-mr24      margin-right: 24px
-mb24      margin-bottom: 24px
-ml24      margin-left: 24px
+<div class="m24">margin: 24px</div>
+<div class="mt24">margin-top: 24px</div>
+<div class="mr24">margin-right: 24px</div>
+<div class="mb24">margin-bottom: 24px</div>
+<div class="ml24">margin-left: 24px</div>
+<div class="mh24">margin-left: 24px; margin-right: 24px</div>
+<div class="mv24">margin-top: 24px; margin-bottom: 24px</div>
 
-mh24      margin-left: 24px; margin-right: 24px
-mv24      margin-top: 24px; margin-bottom: 24px
+<!--Negative margins-->
+<div class="m-24>margin: -24px</div>
+<div class="mt-24>margin-top: -24px</div>
+<div class="mr-24>margin-right: -24px</div>
+<div class="mb-24>margin-bottom: -24px</div>
+<div class="ml-24>margin-left: -24px</div>
+<div class="mh-24>margin-left: -24px; margin-right: -24px</div>
+<div class="mv-24>margin-top: -24px; margin-bottom: -24px</div>
 
-m24       margin: 24px
+<!--Auto margins-->
+<div class="ma"margin: auto</div>
+<div class="mta"margin-top: auto</div>
+<div class="mra"margin-right: auto</div>
+<div class="mba"margin-bottom: auto</div>
+<div class="mla"margin-left: auto</div>
+<div class="mha"margin-left: auto; margin-right: auto</div>
+<div class="mva"margin-top: auto; margin-bottom: auto</div>
 
-// Negative margins
-mt-24      margin-top: -24px
-mr-24      margin-right: -24px
-mb-24      margin-bottom: -24px
-ml-24      margin-left: -24px
-
-mh-24      margin-left: -24px; margin-right: -24px
-mv-24      margin-top: -24px; margin-bottom: -24px
-
-m-24       margin: -24px
-
-// Auto margins
-mta       margin-top: auto
-mra       margin-right: auto
-mba       margin-bottom: auto
-mla       margin-left: auto
-
-mha       margin-left: auto; margin-right: auto
-mva       margin-top: auto; margin-bottom: auto
-
-ma        margin: auto
-
-ma0       margin: auto 0 //for centering any element within it's parent
+<!--Margin auto 0 for centering any element within it's parent-->
+<div class="ma0"margin: auto 0</div>
 
 ```
 
