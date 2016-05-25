@@ -130,6 +130,11 @@ a  auto
 <div class="mh-24">margin-left: -24px; margin-right: -24px</div>
 <div class="mv-24">margin-top: -24px; margin-bottom: -24px</div>
 
+```
+
+### Example of classes with auto margins
+```html
+
 <!--Auto margins-->
 <div class="ma">margin: auto</div>
 <div class="mta">margin-top: auto</div>
@@ -141,7 +146,6 @@ a  auto
 
 <!--Margin auto 0 for centering any element within it's parent-->
 <div class="ma0">margin: auto 0</div>
-
 ```
 
 ### Customize
