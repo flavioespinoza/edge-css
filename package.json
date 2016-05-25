@@ -1,7 +1,7 @@
 {
-  "name": "css-spaces",
-  "version": "0.3.5",
-  "description": "A simple CSS spacing library for margins, paddings and more",
+  "name": "edge-css",
+  "version": "0.0.1",
+  "description": "Intuitive margin and padding classes for quick markup styling",
   "main": "gulpfile.js",
   "scripts": {
     "gulp": "gulp",
@@ -14,11 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/badabam/css-spaces.git"
+    "url": "git+https://github.com/flavioespinoza/edge-css.git"
   },
   "keywords": [
     "css",
     "sass",
+    "scss",
     "margin",
     "padding",
     "width",
@@ -31,9 +32,9 @@
   "author": "Flavio Espinoze <flavio.espinoza@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/badabam/css-spaces/issues"
+    "url": "https://github.com/flavioespinoza/edge-css/issues"
   },
-  "homepage": "https://github.com/badabam/css-spaces#readme",
+  "homepage": "https://github.com/flavioespinoza/edge-css#readme",
   "devDependencies": {
     "browser-sync": "^2.9.12",
     "del": "^2.0.2",
