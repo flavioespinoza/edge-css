@@ -1,0 +1,54 @@
+// optional prefix to prevent naming collisions
+$prefix: '';
+
+// sizes
+$xxxs: 4px;
+$xxs: 6px;
+$xs: 8px;
+$s: 12px;
+$m: 16px;
+$l: 18px;
+$xl: 24px;
+$xxl: 32px;
+$xxxl: 48px;
+
+// naming delimiters
+$delimiter1: '';
+$delimiter2: '-';
+
+// other naming
+$a: '';
+// all values (top, right, bottom, left);
+$h: 'h';
+// horizontal values (left, right)
+$v: 'v';
+// vertical values (top, bottom)
+$auto: 'a';
+$null: '0';
+$neg: '-';
+
+$sizes: (
+    $auto: auto,
+    $null: 0,
+    4 : $xxxs,
+    6 : $xxs,
+    8 : $xs,
+    12 : $s,
+    16 : $m,
+    18 : $l,
+    24 : $xl,
+    32 : $xxl,
+    48 : $xxxl
+);
+
+$widths: (
+    a : auto,
+    0 : 0,
+    5 : 5%,
+    10 : 10%,
+    25 : 25%,
+    33 : (100% / 3),
+    50 : 50%,
+    66 : (100% / 3 * 2),
+    100: 100%
+);

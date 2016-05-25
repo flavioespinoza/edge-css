@@ -1,0 +1,84 @@
+/* Intuitive margin and padding classes for quick markup styling */
+/* ----------- */
+/* MARGINS */
+@each $name, $size in $sizes {
+
+  /* margin-top */
+  .#{$prefix}m#{$delimiter1}t#{if($name != '', $name, '')} {
+    margin-top: #{$size} !important;
+  }
+  /* margin-right */
+  .#{$prefix}m#{$delimiter1}r#{if($name != '', $name, '')} {
+    margin-right: #{$size} !important;
+  }
+  /* margin-bottom */
+  .#{$prefix}m#{$delimiter1}b#{if($name != '', $name, '')} {
+    margin-bottom: #{$size} !important;
+  }
+  /* margin-left */
+  .#{$prefix}m#{$delimiter1}l#{if($name != '', $name, '')} {
+    margin-left: #{$size} !important;
+  }
+
+  /* horizontal margins */
+  .#{$prefix}m#{$delimiter1}#{$h}#{if($name != '', $name, '')} {
+    margin-left: #{$size} !important;
+    margin-right: #{$size} !important;
+  }
+  /* vertical margins */
+  .#{$prefix}m#{$delimiter1}#{$v}#{if($name != '', $name, '')} {
+    margin-top: #{$size} !important;
+    margin-bottom: #{$size} !important;
+  }
+  /* all margins */
+  .#{$prefix}m#{$delimiter1}#{$a}#{if($name != '', $name, '')} {
+    margin: #{$size} !important;
+  }
+}
+
+/* NEGATIVE MARGINS */
+@each $name, $size in $sizes {
+
+  $negName: $neg + $name;
+
+  // DON'T run, if it is 'auto'
+  // (because '-auto;' is not a valid value)
+
+  @if $size != auto {
+  @if $size != 0 {
+
+    /* margin-top */
+    .#{$prefix}m#{$delimiter1}t#{if($name != '', $neg + $name, $neg)} {
+      margin-top: -#{$size} !important;
+    }
+    /* margin-right */
+    .#{$prefix}m#{$delimiter1}r#{if($name != '', $neg + $name, $neg)} {
+      margin-right: -#{$size} !important;
+    }
+    /* margin-bottom */
+    .#{$prefix}m#{$delimiter1}b#{if($name != '', $neg + $name, $neg)} {
+      margin-bottom: -#{$size} !important;
+    }
+    /* margin-left */
+    .#{$prefix}m#{$delimiter1}l#{if($name != '', $neg + $name, $neg)} {
+      margin-left: -#{$size} !important;
+    }
+
+    /* horizontal margins */
+    .#{$prefix}m#{$delimiter1}#{$h}#{if($name != '', $neg + $name, $neg)} {
+      margin-left: -#{$size} !important;
+      margin-right: -#{$size} !important;
+    }
+    /* vertical margins */
+    .#{$prefix}m#{$delimiter1}#{$v}#{if($name != '', $neg + $name, $neg)} {
+      margin-top: -#{$size} !important;
+      margin-bottom: -#{$size} !important;
+    }
+    /* all margins */
+    .#{$prefix}m#{$delimiter1}#{$a}#{if($name != '', $neg + $name, $neg)} {
+      margin: -#{$size} !important;
+    }
+
+  } // end @if
+  } // end 2nd @if
+}

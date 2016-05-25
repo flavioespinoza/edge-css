@@ -1,0 +1,30 @@
+{
+  "name": "Edge css",
+  "description": "A simple CSS spacing library for margins, paddings and more",
+  "main": "dist/spaces.css",
+  "authors": [
+    "Jeremias Erbs <j@badabam.de>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "sass",
+    "margin",
+    "padding",
+    "width",
+    "styles",
+    "spacing",
+    "height",
+    "library",
+    "lib"
+  ],
+  "homepage": "http://badabam.github.io/css-spaces/",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
