@@ -1,13 +1,13 @@
 /* POSITION */
 
 .pos-rel {
-  position: relative;
+  position: relative !important;
 }
 .pos-abs {
-  position: absolute;
+  position: absolute !important;
 }
 .pos-fixed {
-  position: fixed;
+  position: fixed !important;
 }
 
 @each $name, $size in $sizes {
