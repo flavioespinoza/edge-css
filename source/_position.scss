@@ -14,7 +14,7 @@
 
   /* top */
   .#{$prefix}t#{if($name != '', $name, '')} {
-    margin-top: #{$size} !important;
+    top: #{$size} !important;
   }
   /* right */
   .#{$prefix}r#{if($name != '', $name, '')} {
