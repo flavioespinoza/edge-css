@@ -18,7 +18,7 @@ gulp.task('build', ['clean', 'sass', 'sass-min']);
 gulp.task('sass', function () {
   return gulp.src('source/*.scss')
     .pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))
-    .pipe(gulp.dest('dist/'))
+    .pipe(gulp.dest('source/'))
 });
 
 // create minified scss files
@@ -29,7 +29,7 @@ gulp.task('sass-min', function () {
       path.basename += ".min";
       return path;
     }))
-    .pipe(gulp.dest('dist/'))
+    .pipe(gulp.dest('source/'))
 });
 
 // delete dist folder

@@ -18,7 +18,7 @@ Include the edge.css in the head of your index.html
 
 ```html
 <head>
-<link rel="stylesheet" href="bower_components/dist/edge.css">
+<link rel="stylesheet" href="bower_components/source/edge.css">
 </head>
 ```
 
