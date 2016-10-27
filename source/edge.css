@@ -1095,3 +1095,7 @@
 
 /* left */
 .l-48 { left: -48px !important; }
+
+.fl { float: left; }
+
+.fr { float: right; }
