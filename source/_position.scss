@@ -10,6 +10,7 @@
   position: fixed !important;
 }
 
+
 @each $name, $size in $sizes {
 
   /* top */

@@ -1,7 +1,7 @@
 {
   "name": "edge-css",
   "description": "Intuitive margin and padding CSS library for quick markup styling",
-  "main": "dist/edge.css",
+  "main": "source/edge.css",
   "authors": [
     "Flavio Espinoza <flavio.espinoza@gmail.com>"
   ],
