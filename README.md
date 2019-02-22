@@ -3,8 +3,10 @@
 Intuitive margin and padding classes for quick markup styling
 
 ```html
-<div class="mt12">Header has a margin-top of 12px</div>
-<div class="mt12 mb6">Header has a margin-top of 12px and margin-bottom of 6px</div>
+
+<header class="mt12">Header has a margin-top of 12px</header>
+
+<header class="mt12 mb6">Header has a margin-top of 12px and margin-bottom of 6px</header>
 ```
 
 ### Smart
@@ -19,11 +21,16 @@ $ npm i edge-css
 
 ### Usage
 
-Include the edge.css in the head of your index.html
+```scss
+// Import edge.css into your .scss or .less file
+@import 'source/edge.css'
+```
+or
 
 ```html
+<!-- Include the edge.css in the head of your index.html -->
 <head>
-    <link rel="stylesheet" href="bower_components/source/edge.css" />
+    <link rel="stylesheet" href="assets/style/edge.css" />
 </head>
 ```
 
@@ -98,10 +105,8 @@ h         horizontal
 ### 3. Positive or negative values (margins only)
 
 ```html
-<div class="mr16"></div>
-positive value { margin-right: 16px }
-<div class="mr-16"></div>
-negative value { margin-right: -16px }
+<div class="mr16"></div> //  .mr16 { margin-right: 16px }
+<div class="mr-16"></div> // .mr16 { margin-right: -16px }
 ```
 
 ### 4. Size
@@ -126,6 +131,7 @@ a  auto
 ### Example of classes with 24px margins
 
 ```html
+
 <!--Margins-->
 
 <div class="m24">margin: 24px</div>
@@ -150,6 +156,7 @@ a  auto
 ### Example of classes with auto margins
 
 ```html
+
 <!--Auto margins-->
 
 <div class="ma">margin: auto</div>
