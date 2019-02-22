@@ -1,48 +1,48 @@
 {
-    "name": "edge-css",
-    "version": "0.0.1",
-    "description": "Intuitive margin and padding classes for quick markup styling",
-    "main": "gulpfile.js",
-    "scripts": {
-        "gulp": "gulp",
-        "bower": "bower",
-        "prestart": "npm install",
-        "build": "npm install && gulp",
-        "start": "gulp dev",
-        "postinstall": "bower install",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/flavioespinoza/edge-css.git"
-    },
-    "keywords": [
-        "css",
-        "sass",
-        "scss",
-        "margin",
-        "padding",
-        "width",
-        "styles",
-        "spacing",
-        "height",
-        "library",
-        "lib"
-    ],
-    "author": "Flavio Espinoze <flavio.espinoza@gmail.com>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/flavioespinoza/edge-css/issues"
-    },
-    "homepage": "https://github.com/flavioespinoza/edge-css#readme",
-    "devDependencies": {
-        "browser-sync": "^2.9.12",
-        "del": "^2.0.2",
-        "gulp": "^4.0.0",
-        "gulp-rename": "^1.2.2",
-        "gulp-sass": "^2.3.1"
-    },
-    "dependencies": {
-        "minimatch": "^3.0.4"
-    }
+  "name": "edge-css",
+  "version": "0.0.1",
+  "author": "Flavio Espinoze <flavio.espinoza@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flavioespinoza/edge-css/issues"
+  },
+  "homepage": "https://github.com/flavioespinoza/edge-css#readme",
+  "description": "Intuitive margin and padding classes for quick markup styling",
+  "main": "gulpfile.js",
+  "scripts": {
+    "gulp": "gulp",
+    "bower": "bower",
+    "prestart": "npm install",
+    "build": "npm install && gulp",
+    "start": "gulp dev",
+    "postinstall": "bower install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flavioespinoza/edge-css.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "scss",
+    "margin",
+    "padding",
+    "width",
+    "styles",
+    "spacing",
+    "height",
+    "library",
+    "lib"
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.9.12",
+    "del": "^2.0.2",
+    "gulp": "^4.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1"
+  },
+  "dependencies": {
+    "minimatch": "^3.0.4"
+  }
 }
