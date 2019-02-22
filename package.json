@@ -1,48 +1,46 @@
 {
-  "name": "edge-css",
-  "version": "0.0.1",
-  "description": "Intuitive margin and padding classes for quick markup styling",
-  "main": "gulpfile.js",
-  "scripts": {
-    "gulp": "gulp",
-    "bower": "bower",
-    "prestart": "npm install",
-    "build": "npm install && gulp",
-    "start": "gulp dev",
-    "postinstall": "bower install",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/flavioespinoza/edge-css.git"
-  },
-  "keywords": [
-    "css",
-    "sass",
-    "scss",
-    "margin",
-    "padding",
-    "width",
-    "styles",
-    "spacing",
-    "height",
-    "library",
-    "lib"
-  ],
-  "author": "Flavio Espinoze <flavio.espinoza@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/flavioespinoza/edge-css/issues"
-  },
-  "homepage": "https://github.com/flavioespinoza/edge-css#readme",
-  "devDependencies": {
-    "browser-sync": "^2.9.12",
-    "del": "^2.0.2",
-    "gulp": "^3.9.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.1"
-  },
-  "dependencies": {
-    "del": "^2.2.0"
-  }
+    "name": "edge-css",
+    "version": "0.0.1",
+    "description": "Intuitive margin and padding classes for quick markup styling",
+    "main": "gulpfile.js",
+    "scripts": {
+        "gulp": "gulp",
+        "bower": "bower",
+        "prestart": "npm install",
+        "build": "npm install && gulp",
+        "start": "gulp dev",
+        "postinstall": "bower install",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/flavioespinoza/edge-css.git"
+    },
+    "keywords": [
+        "css",
+        "sass",
+        "scss",
+        "margin",
+        "padding",
+        "width",
+        "styles",
+        "spacing",
+        "height",
+        "library",
+        "lib"
+    ],
+    "author": "Flavio Espinoze <flavio.espinoza@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/flavioespinoza/edge-css/issues"
+    },
+    "homepage": "https://github.com/flavioespinoza/edge-css#readme",
+    "devDependencies": {
+        "browser-sync": "^2.9.12",
+        "del": "^2.0.2",
+        "gulp": "^3.9.1",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^2.3.1"
+    },
+    "dependencies": {}
 }
