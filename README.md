@@ -10,10 +10,6 @@ Based on the Duodecimal System (aka Base 12) which is a positional system using 
 
 ### Install
 ```shell
-$ yarn install edge-css
-```
-or 
-```shell
 $ npm i edge-css
 ```
 
