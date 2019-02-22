@@ -42,5 +42,7 @@
         "gulp-rename": "^1.2.2",
         "gulp-sass": "^2.3.1"
     },
-    "dependencies": {}
+    "dependencies": {
+        "minimatch": "^3.0.4"
+    }
 }
