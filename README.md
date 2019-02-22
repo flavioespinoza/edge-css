@@ -74,7 +74,7 @@ All classes are composed of some simple parts.
 
 ### 1. Property shortcut
 
-```
+```shell
 m         margin
    -OR-
 p         padding
@@ -82,7 +82,7 @@ p         padding
 
 ### 2. Direction
 
-```
+```shell
 t         top
 b         bottom
 r         right
@@ -106,7 +106,8 @@ negative value { margin-right: -16px }
 
 ### 4. Size
 
-```
+```shell
+
 a  auto
 0  0px
 4  4px
@@ -118,7 +119,9 @@ a  auto
 24  24px
 32  32px
 48  48px
+
 ```
+
 
 ### Example of classes with 24px margins
 
