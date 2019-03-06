@@ -1,7 +1,8 @@
 {
   "name": "edge-css",
   "version": "0.0.1",
-  "author": "Flavio Espinoze <flavio.espinoza@gmail.com>",
+  "author": "Flavio Espinoza",
+  "email": "flavio.espinoza@gmail.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/flavioespinoza/edge-css/issues"
