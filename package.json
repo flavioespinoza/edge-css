@@ -11,11 +11,9 @@
   "main": "gulpfile.js",
   "scripts": {
     "gulp": "gulp",
-    "bower": "bower",
     "prestart": "npm install",
     "build": "npm install && gulp",
     "start": "gulp dev",
-    "postinstall": "bower install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -43,6 +41,8 @@
     "gulp-sass": "^2.3.1"
   },
   "dependencies": {
+    "lodash": "^4.17.15",
+    "lodash.template": "^4.5.0",
     "minimatch": "^3.0.4"
   }
 }
