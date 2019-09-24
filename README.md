@@ -193,3 +193,121 @@ Modify the .scss files in the source folder and gulp will automatically update y
 
 [sass]: http://sass-lang.com/install
 [gulp]: https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
+
+
+```json
+{
+  "source_data": {
+    "items": [
+      {
+        "resourceType": "Patient",
+        "identifier": {
+          "value": "patient_abc"
+        },
+        "name": {
+          "given": "Bob",
+          "family": "Smith"
+        },
+        "birthDate": "1981-01-02",
+        "ssn": "172-391-2020",
+        "address": {
+          "text": "111 FIRST ST LAS VEGAS NV 89111"
+        },
+        "careProvider": [
+          {
+            "reference": "https://hie.acme.com/practioner/123"
+          }
+        ]
+      }
+    ]
+  },
+  "source_metadata": {
+    "items": []
+  },
+  "ado_data": {
+    "@context": "https://ado.utm.webshield.io/json.ld",
+    "type": "https://ado.utm.webshield.io/IngestADOData",
+    "metadata": {
+      "type": "https://ado.utm.webshield.io/IngestMetadata",
+      "ado_2_source_mapping": {
+        "recordID": "identifier.value"
+      }
+    },
+    "subject": [
+      {
+        "id": "https://hie.acme.com/patient/abc",
+        "type": "https://ado.utm.webshield.io/Person",
+        "recordID": "patient_abc",
+        "birthDate": "1981-01-02",
+        "identifiers": {
+          "type": "https://ado.utm.webshield.io/Identifiers",
+          "ssn": "172-391-2020"
+        },
+        "names": [
+          {
+            "givenName": "Bob",
+            "familyName": "Smith",
+            "type": "https://ado.utm.webshield.io/PersonName"
+          }
+        ],
+        "addresses": [
+          {
+            "fullAddress": "111 FIRST ST LAS VEGAS NV 89111",
+            "type": [
+              "https://ado.utm.webshield.io/PostalAddress"
+            ]
+          }
+        ]
+      }
+    ],
+    "credential": [
+      {
+        "id": "https://hie.acme.com/credentials/78282-29292",
+        "type": [
+          "https://ado.utm.webshield.io/Credential",
+          "https://ado.utm.webshield.io/RelationshipCredential"
+        ],
+        "issuer": {
+          "id": "https://hie.acme.com/issuer/abc_d",
+          "type": "https://ado.utm.webshield.io/Person",
+          "description": "person who entered the information into the system"
+        },
+        "recordID": "patient_abc",
+        "credentialSubject": [
+          {
+            "id": "https://hie.acme.com/person/patient_abc",
+            "type": "https://ado.utm.webshield.io/Person",
+            "relationship": [
+              {
+                "type": [
+                  "https://ado.utm.webshield.io/PatientRelationship"
+                ],
+                "knows": "https://hie.acme.com/practioner/practioner_123",
+                "startDate": "when person became patient",
+                "endDate": "when person stopped being patient"
+              }
+            ]
+          },
+          {
+            "id": "https://hie.acme.com/practioner/practioner_123",
+            "type": "https://ado.utm.webshield.io/Person",
+            "relationship": [
+              {
+                "type": [
+                  "https://ado.utm.webshield.io/DoctorRelationship"
+                ],
+                "knows": "https://ldap.pd.acme.com/person/abc_123",
+                "startDate": "when person became doctor",
+                "endDate": "when person stopped being doctor"
+              }
+            ]
+          }
+        ],
+        "basisOfVerification": {},
+        "basisOfAccountability": {}
+      }
+    ],
+    "consent": []
+  }
+}
+```
