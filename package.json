@@ -1,6 +1,6 @@
 {
-  "name": "edge-css",
-  "version": "0.0.1",
+  "name": "@flavioespinoza/edge-css",
+  "version": "0.0.3",
   "author": "Flavio Espinoza <flavio.espinoza@gmail.com>",
   "license": "MIT",
   "bugs": {
