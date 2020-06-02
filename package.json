@@ -11,8 +11,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "gulp": "gulp",
-    "prestart": "npm install",
-    "build": "npm install && gulp",
+    "prestart": "yarn install",
+    "build": "yarn install && gulp",
     "start": "gulp dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -36,13 +36,8 @@
   "devDependencies": {
     "browser-sync": "^2.9.12",
     "del": "^2.0.2",
-    "gulp": "^4.0.0",
+    "gulp": "^3.9.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.1"
-  },
-  "dependencies": {
-    "lodash": "^4.17.15",
-    "lodash.template": "^4.5.0",
-    "minimatch": "^3.0.4"
+    "gulp-sass": "^2.1.0"
   }
 }

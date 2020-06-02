@@ -83,6 +83,8 @@
   } // end 2nd @if
 }
 
-.ma0 {
-  margin: auto 0 !important;
+// margin 0 auto for centering
+.m0a {
+  margin: 0 auto !important;
+  display: block;
 }
