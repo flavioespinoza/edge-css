@@ -52,17 +52,6 @@ These elements have no padding
 </body>
 ```
 
-This navigation is centered
-
-```html
-<body>
-    <!-- Read "{ margin: auto 0 }" -->
-    <nav class="m0a">
-        <a href="/">Home</a>
-    </nav>
-</body>
-```
-
 ### Important Override
 All `edge-css` properties have `!important` so they will override any class that is specified before them:
 
