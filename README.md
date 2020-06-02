@@ -16,7 +16,7 @@ Based on the Duodecimal System which is a positional system using twelve as its 
 ## Install
 
 ```shell
-$ yarn add edge-css
+yarn add @flavioespinoza/edge-css
 ```
 
 ## Usage
@@ -29,9 +29,9 @@ $ yarn add edge-css
 or
 
 ```html
-<!-- Include the edge.css in the head of your index.html -->
+<!-- Copy edge.css into your static styles css folder and include in the head of your index.html -->
 <head>
-    <link rel="stylesheet" href="/static/style/edge.css" />
+    <link rel="stylesheet" href="/static/styles/edge.css" />
 </head>
 ```
 
