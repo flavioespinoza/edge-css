@@ -10,31 +10,27 @@
   position: fixed !important;
 }
 
-
 @each $name, $size in $sizes {
-
   /* top */
-  .#{$prefix}t#{if($name != '', $name, '')} {
+  .#{$prefix}t#{if($name != "", $name, "")} {
     top: #{$size} !important;
   }
   /* right */
-  .#{$prefix}r#{if($name != '', $name, '')} {
+  .#{$prefix}r#{if($name != "", $name, "")} {
     right: #{$size} !important;
   }
   /* bottom */
-  .#{$prefix}b#{if($name != '', $name, '')} {
+  .#{$prefix}b#{if($name != "", $name, "")} {
     bottom: #{$size} !important;
   }
   /* left */
-  .#{$prefix}l#{if($name != '', $name, '')} {
+  .#{$prefix}l#{if($name != "", $name, "")} {
     left: #{$size} !important;
   }
-
 }
 
 /* NEGATIVE POSITION */
 @each $name, $size in $sizes {
-
   $negName: $neg + $name;
 
   // DON'T run, if it is 'auto'
@@ -42,24 +38,22 @@
 
   @if $size != auto {
     @if $size != 0 {
-
       /* top */
-      .#{$prefix}t#{if($name != '', $neg + $name, $neg)} {
+      .#{$prefix}t#{if($name != "", $neg + $name, $neg)} {
         top: -#{$size} !important;
       }
       /* right */
-      .#{$prefix}r#{if($name != '', $neg + $name, $neg)} {
+      .#{$prefix}r#{if($name != "", $neg + $name, $neg)} {
         right: -#{$size} !important;
       }
       /* bottom */
-      .#{$prefix}b#{if($name != '', $neg + $name, $neg)} {
+      .#{$prefix}b#{if($name != "", $neg + $name, $neg)} {
         bottom: -#{$size} !important;
       }
       /* left */
-      .#{$prefix}l#{if($name != '', $neg + $name, $neg)} {
+      .#{$prefix}l#{if($name != "", $neg + $name, $neg)} {
         left: -#{$size} !important;
       }
-
     } // end @if
   } // end 2nd @if
 }
