@@ -10,11 +10,9 @@
   "description": "Intuitive margin and padding classes for quick markup styling",
   "main": "gulpfile.js",
   "scripts": {
-    "gulp": "gulp",
-    "prestart": "yarn install",
-    "build": "yarn install && gulp",
-    "start": "gulp dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp sass && gulp sass-min",
+    "start": "gulp sass",
+    "min": "gulp sass-min"
   },
   "repository": {
     "type": "git",
@@ -34,13 +32,10 @@
     "lib"
   ],
   "devDependencies": {
-    "browser-sync": "^2.9.12",
-    "del": "^2.0.2",
-    "gulp": "^3.9.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.1.0",
-    "lodash": "^4.17.12",
-    "lodash.template": "^4.5.0",
-    "minimatch": "^3.0.2"
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.14.1"
   }
 }

@@ -41,8 +41,7 @@
 
   $negName: $neg + $name;
 
-  // DON'T run, if it is 'auto'
-  // (because '-auto;' is not a valid value)
+  // DON'T run, if it is 'auto' because '-auto;' is not a valid value
 
   @if $size != auto {
   @if $size != 0 {

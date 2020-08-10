@@ -1,0 +1,37 @@
+@each $name, $size in $sizes {
+  
+  // DON'T run, if it is 'auto'
+  @if $size != auto {
+    /* padding-top */
+    .#{$prefix}p#{$delimiter1}t#{if($name != "", $name, "")} {
+      padding-top: #{$size} !important;
+    }
+    /* padding-right */
+    .#{$prefix}p#{$delimiter1}r#{if($name != "", $name, "")} {
+      padding-right: #{$size} !important;
+    }
+    /* padding-bottom */
+    .#{$prefix}p#{$delimiter1}b#{if($name != "", $name, "")} {
+      padding-bottom: #{$size} !important;
+    }
+    /* padding-left */
+    .#{$prefix}p#{$delimiter1}l#{if($name != "", $name, "")} {
+      padding-left: #{$size} !important;
+    }
+
+    /* horizontal paddings */
+    .#{$prefix}p#{$delimiter1}#{$h}#{if($name != "", $name, "")} {
+      padding-left: #{$size} !important;
+      padding-right: #{$size} !important;
+    }
+    /* vertical paddings */
+    .#{$prefix}p#{$delimiter1}#{$v}#{if($name != "", $name, "")} {
+      padding-top: #{$size} !important;
+      padding-bottom: #{$size} !important;
+    }
+    /* all paddings */
+    .#{$prefix}p#{$delimiter1}#{$a}#{if($name != "", $name, "")} {
+      padding: #{$size} !important;
+    }
+  }
+}

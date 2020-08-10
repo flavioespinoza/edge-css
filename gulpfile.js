@@ -1,38 +1,29 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var del  = require('del');
-var rename = require('gulp-rename');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const rename = require('gulp-rename');
+const sourcemaps = require('gulp-sourcemaps');
 
-// start development
-gulp.task('default', ['dev']);
-
-// start scss watch mode
-gulp.task('dev', ['sass'], function () {
-  gulp.watch('source/**/*.scss', ['sass']);
-});
-
-// create normal and minified versions
-gulp.task('build', ['clean', 'sass', 'sass-min']);
+sass.compiler = require('node-sass');
 
 // create readable css from scss files
 gulp.task('sass', function () {
-  return gulp.src('source/*.scss')
-    .pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))
-    .pipe(gulp.dest('source/'))
+  return gulp.src('./sass/**/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass.sync().on('error', sass.logError))
+    .pipe(sourcemaps.write('./maps'))
+    .pipe(gulp.dest('./css'));
 });
 
-// create minified scss files
+// create minified css file
 gulp.task('sass-min', function () {
-  return gulp.src('source/*.scss')
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+  return gulp.src('./sass/**/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(rename(function (path) {
       path.basename += ".min";
       return path;
     }))
-    .pipe(gulp.dest('source/'))
+    .pipe(sourcemaps.write('./maps'))
+    .pipe(gulp.dest('./css'));
 });
 
-// delete dist folder
-gulp.task('clean', function () {
-  return del(['dist']);
-});
