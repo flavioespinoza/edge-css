@@ -506,7 +506,7 @@
 /* all margins */
 .m-48 { margin: -48px !important; }
 
-.ma0 { margin: auto 0 !important; }
+.m0a { margin: 0 auto !important; display: block; }
 
 /* padding-top */
 .pta { padding-top: auto !important; }
@@ -782,23 +782,23 @@
 .p48 { padding: 48px !important; }
 
 /* widths */
-.wa { width: auto !important; }
+.wa { width: auto !important; overflow: hidden; }
 
-.w0 { width: 0 !important; }
+.w0 { width: 0 !important; overflow: hidden; }
 
-.w5 { width: 5% !important; }
+.w5 { width: 5% !important; overflow: hidden; }
 
-.w10 { width: 10% !important; }
+.w10 { width: 10% !important; overflow: hidden; }
 
-.w25 { width: 25% !important; }
+.w25 { width: 25% !important; overflow: hidden; }
 
-.w33 { width: 33.33333% !important; }
+.w33 { width: 33.33333% !important; overflow: hidden; }
 
-.w50 { width: 50% !important; }
+.w50 { width: 50% !important; overflow: hidden; }
 
-.w66 { width: 66.66667% !important; }
+.w66 { width: 66.66667% !important; overflow: hidden; }
 
-.w100 { width: 100% !important; }
+.w100 { width: 100% !important; overflow: hidden; }
 
 /* POSITION */
 .pos-rel { position: relative !important; }
@@ -1099,3 +1099,7 @@
 .fl { float: left; }
 
 .fr { float: right; }
+
+.bg-pink { background-color: pink; }
+
+.bg-green { background-color: green; }
