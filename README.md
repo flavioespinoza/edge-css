@@ -20,10 +20,14 @@ yarn add @flavioespinoza/edge-css
 ```
 
 ## Usage
-
+Import edge.css into your .scss
 ```scss
-// Import edge.css into your .scss or .less file
-@import 'source/edge.css'
+
+@use 'css/edge.css'
+
+or 
+
+@import 'css/edge.css' // deprecated
 ```
 
 or
@@ -194,7 +198,7 @@ Div with margin size `24px` and various positions
 </body>
 
 ```
-![docs/assets/img/magin-0-auto.png](docs/assets/img/magin-0-auto.png)
+![docs/assets/img/margin-0-auto.png](docs/assets/img/magin-0-auto.png)
 
 ## Development
 
@@ -211,11 +215,11 @@ CD into your local `edge-css` directory and install the dependencies.
 yarn install
 ```
 
-Run the build command and modify the `.scss` files in the `./source` directory and `gulp` will automatically update your `edge.css` file in the `./source` directory.
+Modify the `.scss` files in the `./sass` directory and then run the build command.
 ```shell
 yarn build
 ```
-
+`gulp` will compile and update your `edge.css` file in the `./css` directory.
 
 [sass]: http://sass-lang.com/install
 [gulp]: https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
