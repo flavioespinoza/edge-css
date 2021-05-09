@@ -1,6 +1,6 @@
 {
   "name": "@flavioespinoza/edge-css",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "author": "Flavio Espinoza <flavio.espinoza@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -8,7 +8,7 @@
   },
   "homepage": "https://github.com/flavioespinoza/edge-css#readme",
   "description": "Intuitive margin and padding classes for quick markup styling",
-  "main": "gulpfile.js",
+  "main": "css/edge.min.css",
   "scripts": {
     "build": "gulp sass && gulp sass-min",
     "start": "gulp sass",
